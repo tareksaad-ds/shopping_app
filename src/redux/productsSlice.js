@@ -3,10 +3,10 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 //Fetch All Products from FakeStoreAPI
 export const fetchAllProducts = createAsyncThunk(
     `fetchProducts`,
-    async() => {
-        const response = await fetch('https://dummyjson.com/products')
+    async (skip = 0) => {
+        const response = await fetch(`https://dummyjson.com/products?limit=10&skip=${skip}`)
         const data = await response.json();
-        return data;
+        return { products: data.products, isAppend: skip !== 0};
     }
 ) 
 
@@ -28,14 +28,18 @@ const productSlice = createSlice({
     },
     extraReducers: builder => {
         builder.addCase(fetchAllProducts.fulfilled ,(state, action) => {
-            state.products = action.payload.products,
-            state.status = 'success'
+            if (action.payload.isAppend) {
+                state.products = [ ...state.products, ...action.payload.products ];
+            } else {
+                state.products = action.payload.products;
+            }
+            state.status = 'success';
         });
         builder.addCase(fetchAllProducts.pending, (state, action) => {
-            state.status = 'loading'
+            state.status = 'loading';
         });
         builder.addCase(fetchAllProducts.rejected, (state, action) => {
-            state.status = 'failed'
+            state.status = 'failed';
         });
     }
 })

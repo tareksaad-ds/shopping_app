@@ -1,10 +1,10 @@
 # Shopping App Documentation
-This is a simple application that displays the products list for users and add any product to the cart list and the user can update quantity of selected products on cart list and deleting any product.
+This is a simple application that displays a paginated products list, displays product details and users can add any product to the cart list, update quantity of selected products on cart and deleting any product.
+
 ## Get Started
 - Make sure Node is installed in your machine first if you don't already have Node installed you can install it from [node official website](https://nodejs.org/en/download).
 
 - Make sure you have an android emulator or ios simulator installed before you run this application.
-
 
 - Run `npm install` to install the needed dependencies to your application
 

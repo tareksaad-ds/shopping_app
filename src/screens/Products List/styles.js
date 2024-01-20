@@ -5,6 +5,7 @@ export const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+        width: '100%'
     },
     card: {
         width: '47%',
@@ -15,4 +16,17 @@ export const styles = StyleSheet.create({
         borderRadius: 5,
         marginHorizontal:5
     },
+    headline: {
+        fontSize: 20,
+        fontWeight: '500',
+    },
+    retryBtn: {
+        padding: 10,
+        marginTop: 30,
+        width: '25%',
+        borderRadius: 100,
+    },
+    retryBtnText: {
+        textAlign: 'center',
+    }
 })
