@@ -25,11 +25,9 @@ This is a simple application that displays the products list for users and add a
 - Used `Async Storage`, which a light package that can store cart items in the local storage to be saved locally till the user remove the items or checkout the cart list.
 
 ## Screenshots
-|![ShoppingApp Homepage Screen light theme](https://gomakaan-files.s3.us-east-2.amazonaws.com/home-light.jpeg)|
-![ShoppingApp Homepage Screen dark theme](https://gomakaan-files.s3.us-east-2.amazonaws.com/home-dark.jpeg)|
 
-|![ShoppingApp Product Details Screen light theme](https://gomakaan-files.s3.us-east-2.amazonaws.com/details-light.jpeg)|
-![ShoppingApp Product Details Screen dark theme](https://gomakaan-files.s3.us-east-2.amazonaws.com/details-dark.jpeg)|
-
-|![ShoppingApp Cart Screen light theme](https://gomakaan-files.s3.us-east-2.amazonaws.com/cart-light.jpeg)|
-![ShoppingApp Cart Screen light theme](https://gomakaan-files.s3.us-east-2.amazonaws.com/cart-dark.jpeg)|
+| Light      | Dark |
+| ----------- | ----------- |
+| ![ShoppingApp Homepage Screen light theme](https://gomakaan-files.s3.us-east-2.amazonaws.com/home-light.jpeg) | ![ShoppingApp Homepage Screen dark theme](https://gomakaan-files.s3.us-east-2.amazonaws.com/home-dark.jpeg) |
+| ![ShoppingApp Product Details Screen light theme](https://gomakaan-files.s3.us-east-2.amazonaws.com/details-light.jpeg) | ![ShoppingApp Product Details Screen dark theme](https://gomakaan-files.s3.us-east-2.amazonaws.com/details-dark.jpeg) |
+|![ShoppingApp Cart Screen light theme](https://gomakaan-files.s3.us-east-2.amazonaws.com/cart-light.jpeg)|![ShoppingApp Cart Screen light theme](https://gomakaan-files.s3.us-east-2.amazonaws.com/cart-dark.jpeg)|
