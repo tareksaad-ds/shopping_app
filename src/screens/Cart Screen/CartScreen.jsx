@@ -44,7 +44,7 @@ const CartScreen = ({navigation}) => {
         )}
         ListFooterComponent={CartTotalsComponent}
       />
-      <AppButton backgroundColor={colors.text} color={colors.background} onPress={placeOrder} title={'Place Order'} />
+      <AppButton disabledCondition={cartItems.length === 0} backgroundColor={colors.text} color={colors.background} onPress={placeOrder} title={'Place Order'} />
     </View>
   )
 }
@@ -52,11 +52,12 @@ const CartScreen = ({navigation}) => {
 const CartTotalsComponent = () => {
   const cartItems = useSelector((state) => state.cart.items);
   const total = cartItems.reduce((total, item) => total + (item.quantity * item.product.price) ,0)
+  const { colors } = useTheme()
   
   return (
     <View style={styles.row}>
-      <Text style={styles.totalText}>Total</Text>
-      <Text style={styles.totalSum}>${total}</Text>
+      <Text style={{...styles.totalText, color:colors.text}}>Total</Text>
+      <Text style={{...styles.totalSum, color: colors.text}}>${total}</Text>
     </View>
   )
   }

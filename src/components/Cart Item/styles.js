@@ -36,7 +36,7 @@ export const styles = StyleSheet.create({
         fontWeight: '400'
     },
     amount: {
-        flex:2,
+        flex:1,
         paddingTop: 19
     },
     amountText: {
@@ -44,7 +44,6 @@ export const styles = StyleSheet.create({
         letterSpacing: 1.2,
     },
     delete: {
-        flex:1,
         justifyContent:"center",
     }
 })
